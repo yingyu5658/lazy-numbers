@@ -28,6 +28,12 @@ M-x package-install RET lazy-numbers RET
 (global-set-key (kbd "C-'") #'lazy-number-enter)
 ```
 
+Put the following in your init file:
+
+```elisp
+(global-set-key (kbd "C-'") #'lazy-numbers-enter)
+```
+
 ### Usage
 
 Press `C-'` to enter **home-row number input mode**, then use
