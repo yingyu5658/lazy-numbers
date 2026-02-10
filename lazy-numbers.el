@@ -12,7 +12,7 @@
 ;; Use `C-'` and home row keys to enter numbers
 ;;; Code:
 
-(defvar lazy-number-transient-map
+(defvar lazy-numbers-transient-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "a") (lambda () (interactive) (insert "1") (forward-char 1)))
     (define-key map (kbd "s") (lambda () (interactive) (insert "2") (forward-char 1)))
@@ -25,23 +25,15 @@
     (define-key map (kbd "l") (lambda () (interactive) (insert "9") (forward-char 1)))
     (define-key map (kbd ";") (lambda () (interactive) (insert "0") (forward-char 1)))
 
-    ;; exit
-    (define-key map (kbd "ESC") #'keyboard-quit)
     map)
   "Key map for SPC number input.")
 
-(defun lazy-number-enter ()
+;;;###autoload
+(defun lazy-numbers-enter ()
   "Enter transient number input mode."
   (interactive)
-  (set-transient-map lazy-number-transient-map t))
-
-(global-set-key (kbd "C-'") #'lazy-number-enter)
-
-(defvar lazy-number-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-'") #'lazy-number-enter)
-    map))
+  (set-transient-map lazy-numbers-transient-map t))
 
 (provide 'lazy-numbers)
 
-;;; lazy-number.el ends here
+;;; lazy-numbers.el ends here
