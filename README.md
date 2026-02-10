@@ -1,25 +1,21 @@
 # Lazy Numbers
 
-<div style="text-align=center">
-<img src="./screenshot/opinion.png">
-</div>
+Enter Numbers without moving your hands off the home row.
 
-Enter Numbers without moving your hands off the home row!!!
-
-![](./screenshot/example.gif)
+![Example](./screenshots/example.gif)
 
 ## Install
 
 ### MELPA:
 
 ```
-M-x package-install lazy-numbers
+M-x package-install RET lazy-numbers RET
 ```
 
-## use-package
+### use-package
 
 ```elisp
-(use-package lazy-numebrs
+(use-package lazy-numbers
     :ensure t)
 ```
 
@@ -46,3 +42,6 @@ Press `ESC` to exit.
 
 ## About
 
+When I talk about this idea, my friends often say:
+
+![](./screenshots/opinion.png)
