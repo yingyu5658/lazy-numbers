@@ -7,9 +7,11 @@
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience, tools, lazy
 ;; URL: https://github.com/yingyu5658/lazy-numbers.el
+;; SPDX-License-Identifier: MIT
 
 ;;; Commentary:
 ;; Use `C-'` and home row keys to enter numbers
+
 ;;; Code:
 
 (defvar lazy-numbers-transient-map
