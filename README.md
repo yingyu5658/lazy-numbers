@@ -6,31 +6,12 @@ Enter Numbers without moving your hands off the home row.
 
 ## Install
 
-### MELPA:
-
-```
-M-x package-install RET lazy-numbers RET
-```
-
-### use-package
-
-```elisp
-(use-package lazy-numbers
-    :ensure t)
-```
-
 ### Manual installation
 
 ```elisp
 (add-to-list 'load-path "/path/to/lazy-numbers/")
 (require 'lazy-numbers)
 
-(global-set-key (kbd "C-'") #'lazy-number-enter)
-```
-
-Put the following in your init file:
-
-```elisp
 (global-set-key (kbd "C-'") #'lazy-numbers-enter)
 ```
 
